@@ -1,0 +1,16 @@
+{
+  "name": "projeto-oo",
+  "version": "1.0.0",
+  "description": "Praticas de PO",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
+}
