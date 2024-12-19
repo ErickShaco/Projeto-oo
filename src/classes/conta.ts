@@ -3,11 +3,7 @@ export class Conta {
     private _numero: number,
     private _titular: string,
     private _saldo: number
-    ){
-        this.numero = _numero
-        this.titular = _titular
-        this.saldo = _saldo
-    }
+    ){}
 
     public get numero(){
         return this._numero
@@ -55,8 +51,9 @@ export class Conta {
         return this._saldo
     }
 
-
-
-
-
+    public transferir(contaDestino: Conta, valor: number): number{
+        this.sacar(valor)
+        contaDestino.depositar(valor)
+        return this._saldo
+    }
 }

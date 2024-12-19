@@ -1,10 +1,11 @@
+import { Bola } from "./classes/bola.js"
 import { Carro } from "./classes/carro.js"
 import { Conta } from "./classes/conta.js"
+import { Quadrado } from "./classes/quadrado.js"
+import { Retangulo } from "./classes/retangulo.js"
 
-const user = new Conta(12345, "Jorge", 10)
 
 
-const hilux = new Carro("Hilux", "Toyota", 2019, "Branca", 20000)
+const retangulo = new Retangulo(10, 5)
 
-console.log(user.saldo)
 
