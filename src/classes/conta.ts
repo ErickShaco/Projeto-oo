@@ -1,8 +1,8 @@
-export class Conta {
+export abstract class Conta {
     constructor(
     private _numero: number,
     private _titular: string,
-    private _saldo: number
+    protected _saldo: number
     ){}
 
     public get numero(){
